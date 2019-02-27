@@ -1,0 +1,93 @@
+.catalogs__block {
+  padding: 25px 20px 0 20px;
+}
+
+.catalog__block {
+  background: $catalogBack;
+  padding: 20px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.catalog__title {
+  align-items: center;
+  color: $bl;
+  display: flex;
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  justify-content: center;
+  line-height: 37px;
+  margin: 0 0 10px 5px;
+  min-height: 60px;
+  position: relative;
+  text-transform: uppercase;
+  width: 230px;
+  z-index: 2;
+  &::before {
+    background: $btnGreen;
+    bottom: 4px;
+    border-radius: 50%;
+    content: '';
+    left: -8px;
+    height: 50px;
+    position: absolute;
+    width: 50px;
+  }
+}
+
+.title--slim {
+  &::after {
+    background: url(../img/slim.png) no-repeat left top;
+    content: '';
+    left: 0;
+    height: 50px;
+    position: absolute;
+    width: 50px;
+    z-index: 1;
+  }
+}
+
+.title--pro {
+  padding-left: 15px;
+  &::after {
+    background: url(../img/pro.png) no-repeat left center;
+    content: '';
+    left: -20px;
+    height: 50px;
+    position: absolute;
+    width: 70px;
+    z-index: 1;
+  }
+}
+
+.catalog__text {
+  border-bottom: 1px solid $borderColor;
+  padding-bottom: 25px;
+  width: 240px;
+}
+
+.catalog__btn {
+  align-items: center;
+  background: url(../img/right-arrow-long.png) no-repeat right center;
+  color: $bl;
+  display: flex;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  justify-content: flex-start;
+  line-height: 16px;
+  margin-top: 20px;
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 120px;
+  &:hover,
+  &:focus {
+    background: url(../img/right-arrow-verylong.png) no-repeat right center;
+    outline-color: transparent;
+    width: 130px;
+  }
+  &:active {
+    opacity: .3;
+  }
+}

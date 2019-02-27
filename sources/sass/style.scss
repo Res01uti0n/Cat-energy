@@ -1,17 +1,17 @@
 @font-face {
-  font-family: 'Oswald';
-  src: url(../fonts/Oswaldmedium.woff) format(woff),
-  url(../fonts/Oswaldmedium.woff2) format(woff2);
+  font-family: "Oswald";
+  src: url("../fonts/Oswald-Medium.woff2") format("woff2"),
+      url("../fonts/Oswald-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Oswald';
-  src: url(../fonts/Oswaldregular.woff) format(woff),
-  url(../fonts/Oswaldregular.woff2) format(woff2);
-  font-weight: 900;
+  font-family: "Oswald";
+  src: url("../fonts/Oswald-Regular.woff2") format("woff2"),
+      url("../fonts/Oswald-Regular.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
@@ -19,6 +19,11 @@
 $textColor: #444444;
 $wh: #fff;
 $btnGreen: #68b738;
+$btnHover: #5eaa2f;
+$whAct: rgba(255, 255, 255, .3);
+$catalogBack: #f2f2f2;
+$bl: #000;
+$borderColor: #d9d9d9;
 
 body {
   color: $textColor;
@@ -37,3 +42,5 @@ body {
 
 @import 'header__block';
 @import 'promo__block';
+@import 'catalogs__block';
+@import 'info__block';

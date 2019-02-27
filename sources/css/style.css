@@ -1,16 +1,14 @@
 @font-face {
-  font-family: 'Oswald';
-  src: url(../fonts/Oswaldmedium.woff) format(woff),
-   url(../fonts/Oswaldmedium.woff2) format(woff2);
+  font-family: "Oswald";
+  src: url("../fonts/Oswald-Medium.woff2") format("woff2"), url("../fonts/Oswald-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
-  font-family: 'Oswald';
-  src: url(../fonts/Oswaldregular.woff) format(woff),
-  url(../fonts/Oswaldregular.woff2) format(woff2);
-  font-weight: 900;
+  font-family: "Oswald";
+  src: url("../fonts/Oswald-Regular.woff2") format("woff2"), url("../fonts/Oswald-Regular.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
   font-display: swap; }
 
@@ -45,7 +43,8 @@ body {
   height: 40px;
   width: 35px; }
   .header__logo:hover, .header__logo:focus {
-    opacity: .8; }
+    opacity: .8;
+    outline-color: transparent; }
   .header__logo:active {
     opacity: .6; }
 
@@ -62,7 +61,8 @@ body {
   height: 20px;
   width: 25px; }
   .btn__burger:hover, .btn__burger:focus {
-    opacity: .8; }
+    opacity: .8;
+    outline-color: transparent; }
   .btn__burger:active {
     opacity: .6; }
 
@@ -74,23 +74,24 @@ body {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  height: 455px;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  padding-top: 25px; }
+  padding-top: 5px; }
 
 .promo__title {
   color: #fff;
   font-family: 'Oswald', sans-serif;
   font-size: 36px;
-  font-weight: 400;
+  font-weight: lighter;
   line-height: 36px;
+  margin-bottom: 10px;
   text-align: center; }
 
 .promo__text {
   color: #fff;
   font-family: 'Oswald', sans-serif;
   line-height: 14px;
+  margin-bottom: 35px;
   text-transform: uppercase; }
 
 .btn {
@@ -100,9 +101,122 @@ body {
   color: #fff;
   display: -ms-flexbox;
   display: flex;
+  font-family: 'Oswald', sans-serif;
   height: 40px;
   -ms-flex-pack: center;
       justify-content: center;
   text-decoration: none;
   text-transform: uppercase;
   width: 280px; }
+  .btn:hover, .btn:focus {
+    background: #5eaa2f;
+    outline-color: transparent; }
+  .btn:active {
+    color: rgba(255, 255, 255, 0.3); }
+
+.catalogs__block {
+  padding: 25px 20px 0 20px; }
+
+.catalog__block {
+  background: #f2f2f2;
+  padding: 20px;
+  position: relative;
+  margin-bottom: 20px; }
+
+.catalog__title {
+  -ms-flex-align: center;
+      align-items: center;
+  color: #000;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  -ms-flex-pack: center;
+      justify-content: center;
+  line-height: 37px;
+  margin: 0 0 10px 5px;
+  min-height: 60px;
+  position: relative;
+  text-transform: uppercase;
+  width: 230px;
+  z-index: 2; }
+  .catalog__title::before {
+    background: #68b738;
+    bottom: 4px;
+    border-radius: 50%;
+    content: '';
+    left: -8px;
+    height: 50px;
+    position: absolute;
+    width: 50px; }
+
+.title--slim::after {
+  background: url(../img/slim.png) no-repeat left top;
+  content: '';
+  left: 0;
+  height: 50px;
+  position: absolute;
+  width: 50px;
+  z-index: 1; }
+
+.title--pro {
+  padding-left: 15px; }
+  .title--pro::after {
+    background: url(../img/pro.png) no-repeat left center;
+    content: '';
+    left: -20px;
+    height: 50px;
+    position: absolute;
+    width: 70px;
+    z-index: 1; }
+
+.catalog__text {
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 25px;
+  width: 240px; }
+
+.catalog__btn {
+  -ms-flex-align: center;
+      align-items: center;
+  background: url(../img/right-arrow-long.png) no-repeat right center;
+  color: #000;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  line-height: 16px;
+  margin-top: 20px;
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 120px; }
+  .catalog__btn:hover, .catalog__btn:focus {
+    background: url(../img/right-arrow-verylong.png) no-repeat right center;
+    outline-color: transparent;
+    width: 130px; }
+  .catalog__btn:active {
+    opacity: .3; }
+
+.info__block {
+  padding: 0 20px 0 20px; }
+
+.info__title {
+  color: #000;
+  font-family: 'Oswald', sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px; }
+
+.info__text {
+  padding-left: 80px;
+  position: relative; }
+  .info__text:before {
+    background: #68b738;
+    content: '';
+    height: 60px;
+    left: 0;
+    position: absolute;
+    width: 60px; }
