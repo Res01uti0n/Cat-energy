@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'Oswald';
+  src: url(../fonts/Oswaldmedium.woff) format(woff),
+  url(../fonts/Oswaldmedium.woff2) format(woff2);
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Oswald';
+  src: url(../fonts/Oswaldregular.woff) format(woff),
+  url(../fonts/Oswaldregular.woff2) format(woff2);
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+$textColor: #444444;
+$wh: #fff;
+$btnGreen: #68b738;
+
+body {
+  color: $textColor;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+}
+
+@import 'header__block';
+@import 'promo__block';

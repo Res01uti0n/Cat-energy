@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'Oswald';
+  src: url(../fonts/Oswaldmedium.woff) format(woff),
+   url(../fonts/Oswaldmedium.woff2) format(woff2);
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Oswald';
+  src: url(../fonts/Oswaldregular.woff) format(woff),
+  url(../fonts/Oswaldregular.woff2) format(woff2);
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap; }
+
+body {
+  color: #444444;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  padding: 0; }
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px; }
+
+.header__block {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  min-height: 65px;
+  padding: 0 20px; }
+
+.header__logo {
+  background: url(../img/logo-mobile.png) no-repeat center center;
+  color: transparent;
+  display: block;
+  font-size: 1px;
+  height: 40px;
+  width: 35px; }
+  .header__logo:hover, .header__logo:focus {
+    opacity: .8; }
+  .header__logo:active {
+    opacity: .6; }
+
+.logo--title {
+  background: url(../img/logo-mobile-header.png) no-repeat center center;
+  height: 20px;
+  width: 100px; }
+
+.btn__burger {
+  background: url(../img/mobile-menu.png) no-repeat center center;
+  border: none;
+  font-size: 1px;
+  color: transparent;
+  height: 20px;
+  width: 25px; }
+  .btn__burger:hover, .btn__burger:focus {
+    opacity: .8; }
+  .btn__burger:active {
+    opacity: .6; }
+
+.promo__block {
+  -ms-flex-align: center;
+      align-items: center;
+  background: url(../img/index-background-mobile.png) no-repeat center top;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  height: 455px;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding-top: 25px; }
+
+.promo__title {
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center; }
+
+.promo__text {
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  line-height: 14px;
+  text-transform: uppercase; }
+
+.btn {
+  -ms-flex-align: center;
+      align-items: center;
+  background: #68b738;
+  color: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  -ms-flex-pack: center;
+      justify-content: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 280px; }

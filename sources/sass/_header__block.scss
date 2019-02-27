@@ -1,0 +1,45 @@
+.header__block {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  min-height: 65px;
+  padding: 0 20px;
+}
+
+.header__logo {
+  background: url(../img/logo-mobile.png) no-repeat center center;
+  color: transparent;
+  display: block;
+  font-size: 1px;
+  height: 40px;
+  width: 35px;
+  &:hover,
+  &:focus {
+    opacity: .8;
+  }
+  &:active {
+    opacity: .6;
+  }
+}
+
+.logo--title {
+  background: url(../img/logo-mobile-header.png) no-repeat center center;
+  height: 20px;
+  width: 100px;
+}
+
+.btn__burger {
+  background: url(../img/mobile-menu.png) no-repeat center center;
+  border: none;
+  font-size: 1px;
+  color: transparent;
+  height: 20px;
+  width: 25px;
+  &:hover,
+  &:focus {
+    opacity: .8;
+  }
+  &:active {
+    opacity: .6;
+  }
+}
