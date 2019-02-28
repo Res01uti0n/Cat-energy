@@ -1,0 +1,49 @@
+.menu__block {
+  display: none;
+}
+
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu__list li {
+  align-items: center;
+  border-top: 1px solid $borderColor3;
+  display: flex;
+  justify-content: center;
+  min-height: 63px;
+}
+
+.menu__item {
+  color: $bl;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  &:hover,
+  &:focus {
+    opacity: .6;
+    outline-color: transparent;
+  }
+  &:active {
+    opacity: .3;
+  }
+}
+
+.menu--active {
+  &::before {
+    background: $btnGreen;
+    content:'';
+    height: 2px;
+    position: absolute;
+    top: 25px;
+    width: 100%;
+  }
+}

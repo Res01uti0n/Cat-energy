@@ -29,18 +29,88 @@
   height: 54px;
   justify-content: center;
   line-height: 24px;
-  width: 124px;
+  position: relative;
+  width: 123px;
 }
 
 .exemple__statistic {
   background: $catalogBack;
-  bottom: 8px;
+  bottom: -15px;
+  color: $textColor;
   display: block;
   font-size: 12px;
+  font-weight: 400;
   left: 18px;
   line-height: 12px;
   padding: 0 15px 0 15px;
-  position: relative;
+  position: absolute;
   text-align: center;
   width: 60px;
+}
+
+.exemple__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0 25px 0;
+}
+
+.exemple__price {
+  color: $bl;
+  font-family: 'Oswald', sans-serif;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.exemple__slider {
+  height: 250px;
+  position: relative;
+  width: 100%;
+}
+
+.exemple__img {
+  bottom: 0;
+  position: absolute;
+  left: -13px;
+}
+
+.img--after {
+  left: 30px;
+}
+
+.range__wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.range__text {
+  color: $bl;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.exemple__range {
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  background-color: $wh;
+  border: 1px solid $borderColor2;
+  border-radius: 30px;
+  height: 12px;
+  width: 85px;
+}
+
+.exemple__range::-webkit-slider-thumb {
+  height: 24px;
+  width: 19px;
+}
+
+.exemple__range:hover::-webkit-slider-thumb {
+  background-size: cover;
+  height: 25px;
+  width: 20px;
 }

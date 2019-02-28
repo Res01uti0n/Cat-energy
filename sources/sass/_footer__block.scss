@@ -1,0 +1,84 @@
+.footer__block {
+  background: $catalogBack;
+  display: flex;
+  flex-direction: column;
+  margin-top: -5px;
+  padding: 35px 20px 0 20px;
+}
+
+.logo--footer {
+  align-self: center;
+  background: url(../img/footer-logo.png) no-repeat center center;
+  height: 25px;
+  width: 130px;
+}
+
+.footer__socials {
+  align-items: center;
+  border-bottom: 1px solid $borderColor;
+  border-top: 1px solid $borderColor;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 35px;
+  min-height: 60px;
+  padding-left: 0;
+}
+
+.media__item {
+  color: transparent;
+  display: flex;
+  font-size: 1px;
+  min-height: 30px;
+  width: 50px;
+  &:active {
+    opacity: .3;
+  }
+}
+
+.item--vk {
+  background: url(../img/m-vk.png) no-repeat center center;
+  &:hover,
+  &:focus {
+    background: url(../img/vk.-hover.png) no-repeat center center;
+    outline-color: transparent;
+  }
+}
+
+.item--inst {
+  background: url(../img/m-insta.png) no-repeat center center;
+  &:hover,
+  &:focus {
+    background: url(../img/insta.-hover..png) no-repeat center center;
+    outline-color: transparent;
+  }
+}
+
+.item--fb {
+  background: url(../img/fb.png) no-repeat center center;
+  &:hover,
+  &:focus {
+    background: url(../img/fb.-hover..png) no-repeat center center;
+    outline-color: transparent;
+  }
+}
+
+.footer__creater {
+  align-items: center;
+  background: url(../img/htmlacademy.png) no-repeat 100% 10px;
+  color: $textColor;
+  display: flex;
+  font-size: 16px;
+  line-height: 16px;
+  min-height: 35px;
+  padding: 10px 0 20px 0px;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    background: url(../img/html-hover.png) no-repeat 100% 10px;
+    outline-color: transparent;
+  }
+  &:active {
+    opacity: .3;
+  }
+}

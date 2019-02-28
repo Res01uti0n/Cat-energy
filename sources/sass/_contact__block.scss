@@ -1,0 +1,20 @@
+.contact__wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.contact__text {
+  color: $bl;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  padding-right: 20px;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  line-height: 20px;
+}

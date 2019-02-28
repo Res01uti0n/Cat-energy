@@ -11,7 +11,7 @@
   color: $wh;
   font-family: 'Oswald', sans-serif;
   font-size: 36px;
-  font-weight: lighter;
+  font-weight: 400;
   line-height: 36px;
   margin-bottom: 10px;
   text-align: center;
@@ -43,5 +43,30 @@
   }
   &:active {
     color: $whAct;
+  }
+}
+
+@media (min-width: 770px) {
+  .promo__title {
+    color: $bl;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    margin-bottom: 10px;
+    text-align: left;
+    width: 415px;
+  }
+
+  .promo__text {
+    color: $bl;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .btn {
+    font-size: 20px;
+    height: 50px;
+    line-height: 20px;
+    width: 245px;
   }
 }

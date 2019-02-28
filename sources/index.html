@@ -9,12 +9,19 @@
   </head>
   <body>
     <div class="container">
+    <header class="header__block">
+      <a href="#" class="header__logo">Logo</a>
+      <a href="#" class="header__logo logo--title">Cat-energy</a>
+      <button class="btn__burger" type="button" name="button">Меню</button>
+    </header>
+    <section class="menu__block">
+      <ul class="menu__list">
+        <li><a class="menu__item menu--active" href="#">Главная</a></li>
+        <li><a class="menu__item" href="#">Каталог продукции</a></li>
+        <li><a class="menu__item" href="#">Подбор программы</a></li>
+      </ul>
+    </section>
     <main>
-      <header class="header__block">
-        <a href="#" class="header__logo">Logo</a>
-        <a href="#" class="header__logo logo--title">Cat-energy</a>
-        <button class="btn__burger" type="button" name="button">Меню</button>
-      </header>
       <section class="promo__block">
         <h1 class="promo__title">Функциональное питание для котов</h2>
         <p class="promo__text">Занялся собой? Займись котом!</p>
@@ -43,31 +50,37 @@
       <section class="exemple__block">
         <h3 class="exemple__title">Живой пример</h3>
         <p class="exemple__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <b class="statistic__number">5кг</b>
-        <span class="exemple__statistic">снижение веса</span>
-        <b class="statistic__number">60дней</b>
-        <span class="exemple__statistic">затрачено времени</span>
+        <div class="exemple__wrapper">
+          <b class="statistic__number">5кг <span class="exemple__statistic">снижение веса</span></b>
+          <b class="statistic__number">60дней <span class="exemple__statistic">затрачено времени</span></b>
+        </div>
         <p class="exemple__price">Затраты на питание: 15 000 руб.</p>
-        <img class="exemple__img img--after" src="img/after-mobile.jpg" alt="до">
-        <img class="exemple__img img--before" src="img/before-mobile.jpg" alt="после">
-        <span class="range__text">Было</span>
-        <input type="range" name="" value="">
-        <span class="range__text">Стало</span>
+        <div class="exemple__slider">
+          <img class="exemple__img img--after" src="img/after-mobile.png" alt="до">
+          <img class="exemple__img img--before" src="img/before-mobile.png" alt="после">
+        </div>
+        <div class="range__wrapper">
+          <span class="range__text">Было</span>
+          <input class="exemple__range" type="range" name="" value="">
+          <span class="range__text">Стало</span>
+        </div>
       </section>
-      <section>
-        <b>Приглашаем к сотрудничеству дилеров!</b>
-        <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <section class="contact__block">
+        <div class="contact__wrapper">
+          <p class="contact__text">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="contact__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
         <img src="img/map.jpg" alt="Карта">
       </section>
     </main>
-    <footer>
-      <h2><b>Cat</b>energy</h2>
-      <ul>
-        <li><a href="#">Vk</a></li>
-        <li><a href="#">Inst</a></li>
-        <li><a href="#">Facebook</a></li>
+    <footer class="footer__block">
+      <a href="#" class="header__logo logo--footer">Cat-energy</a>
+      <ul class="footer__socials">
+        <li><a class="media__item item--vk" href="#">Vk</a></li>
+        <li><a class="media__item item--inst" href="#">Inst</a></li>
+        <li><a class="media__item item--fb" href="#">Facebook</a></li>
       </ul>
-      <a href="#">HTML Academy</a>
+      <a class="footer__creater" href="#">HTML Academy</a>
     </footer>
     </div>
   </body>

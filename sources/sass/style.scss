@@ -25,6 +25,7 @@ $catalogBack: #f2f2f2;
 $bl: #000;
 $borderColor: #d9d9d9;
 $borderColor2: #cdcdcd;
+$borderColor3: #e6e6e6;
 
 body {
   color: $textColor;
@@ -41,8 +42,17 @@ body {
   width: 320px;
 }
 
+@media (min-width: 770px) {
+  .container {
+    width: 770px;
+  }
+}
+
 @import 'header__block';
 @import 'promo__block';
 @import 'catalogs__block';
 @import 'info__block';
 @import 'exemple__block';
+@import 'contact__block';
+@import 'footer__block';
+@import 'menu__block';
