@@ -40,3 +40,65 @@
 .text--4 {
   background: url(../img/advantage-4.png) no-repeat 17px 15px;
 }
+
+.text--tablet {
+  display: none;
+}
+
+@media (min-width: 770px) {
+  .info__block {
+    border-bottom: 1px solid $borderColor3;
+    padding: 0 30px 0 30px;
+  }
+
+  .info__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: -30px;
+    padding-right: 80px;
+  }
+
+  .info__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .info__text {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 145px 0 55px 0;
+    min-height: 110px;
+    width: 250px;
+    &:before {
+      height: 80px;
+      top: 30px;
+      width: 80px;
+    }
+  }
+
+  .text--1 {
+    background: url(../img/advantage-1.png) no-repeat 27px 55px,
+    url(../img/1.png) no-repeat 125px 30px;
+  }
+
+  .text--2 {
+    background: url(../img/andvantage-2.png) no-repeat 25px 54px,
+    url(../img/2.png) no-repeat 125px 30px;
+  }
+
+  .text--3 {
+    background: url(../img/advantage-3.png) no-repeat 27px 55px,
+    url(../img/3.png) no-repeat 125px 30px;
+  }
+
+  .text--4 {
+    background: url(../img/advantage-4.png) no-repeat 27px 55px,
+    url(../img/4.png) no-repeat 125px 30px;
+  }
+
+  .text--tablet {
+    display: block;
+  }
+
+}

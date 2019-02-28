@@ -30,6 +30,7 @@
   justify-content: center;
   line-height: 24px;
   position: relative;
+  text-transform: uppercase;
   width: 123px;
 }
 
@@ -45,6 +46,7 @@
   padding: 0 15px 0 15px;
   position: absolute;
   text-align: center;
+  text-transform: lowercase;
   width: 60px;
 }
 
@@ -113,4 +115,128 @@
   background-size: cover;
   height: 25px;
   width: 20px;
+}
+
+@media (min-width: 770px) {
+  .exemple__block {
+    background: none;
+    padding: 0 30px 0 30px;
+  }
+
+  .exemple__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 45px;
+    padding-top: 0;
+  }
+
+  .exemple__text {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: -10px;
+    width: 680px;
+  }
+
+  .statistic__number {
+    font-size: 30px;
+    height: 70px;
+    line-height: 37px;
+    margin-right: 45px;
+    width: 160px;
+  }
+
+  .exemple__statistic {
+    background: $wh;
+    bottom: -6px;
+    color: $textColor;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    left: 30px;
+    line-height: 14px;
+    padding: 0 10px 0 10px;
+    position: absolute;
+    text-align: center;
+    width: auto;
+  }
+
+  .number--2 {
+    left: 20px;
+  }
+
+  .exemple__price {
+    color: $bl;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+    text-transform: uppercase;
+    width: 175px;
+  }
+
+  .exemple__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 0 25px 0;
+  }
+
+  .exemple__box {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+  }
+
+  .exemple__slider {
+    background: $catalogBack;
+    height: 330px;
+    margin-top: 240px;
+    position: relative;
+    width: 100%;
+  }
+
+  .exemple__img {
+    top: -190px;
+    position: absolute;
+    left: 0;
+  }
+
+  .img--after {
+    left: 353px;
+  }
+
+  .range__wrapper {
+    align-items: center;
+    background: $catalogBack;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .exemple__range {
+    -moz-appearance: none;
+         appearance: none;
+    -webkit-appearance: none;
+    background-color: $rangeColor;
+    border: 1px solid $borderColor2;
+    border-radius: 30px;
+    height: 2px;
+    width: 425px;
+  }
+
+  .range__text {
+    font-size: 20px;
+    line-height: 20px;
+    position: relative;
+    &::before {
+      border-bottom: 1px dashed $underlineColor;
+      content: '';
+      height: 2px;
+      position: absolute;
+      top: 23px;
+      width: 100%;
+    }
+  }
 }
