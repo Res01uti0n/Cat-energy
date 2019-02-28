@@ -1,0 +1,46 @@
+.exemple__block {
+  background: $catalogBack;
+  padding: 0 20px 0 20px;
+}
+
+.exemple__title {
+  color: $bl;
+  font-family: 'Oswald', sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+  padding-top: 20px;
+}
+
+.exemple__text {
+  margin-top: -10px;
+  width: 270px;
+}
+
+.statistic__number {
+  align-items: center;
+  border: 1px solid $borderColor2;
+  border-radius: 3px;
+  color: $bl;
+  display: flex;
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  height: 54px;
+  justify-content: center;
+  line-height: 24px;
+  width: 124px;
+}
+
+.exemple__statistic {
+  background: $catalogBack;
+  bottom: 8px;
+  display: block;
+  font-size: 12px;
+  left: 18px;
+  line-height: 12px;
+  padding: 0 15px 0 15px;
+  position: relative;
+  text-align: center;
+  width: 60px;
+}

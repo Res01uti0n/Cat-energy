@@ -11,7 +11,7 @@
 }
 
 .info__text {
-  padding-left: 80px;
+  padding: 3px 0 15px 80px;
   position: relative;
   &:before {
     background: $btnGreen;
@@ -19,6 +19,24 @@
     height: 60px;
     left: 0;
     position: absolute;
+    top: 0;
     width: 60px;
+    z-index: -1;
   }
+}
+
+.text--1 {
+  background: url(../img/advantage-1.png) no-repeat 17px 15px;
+}
+
+.text--2 {
+  background: url(../img/andvantage-2.png) no-repeat 15px 13px;
+}
+
+.text--3 {
+  background: url(../img/advantage-3.png) no-repeat 17px 15px;
+}
+
+.text--4 {
+  background: url(../img/advantage-4.png) no-repeat 17px 15px;
 }
