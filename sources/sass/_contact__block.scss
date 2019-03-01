@@ -15,6 +15,30 @@
   text-transform: uppercase;
 }
 
-.contacts__address {
+.contact__address {
   line-height: 20px;
+}
+
+@media (min-width: 770px) {
+  .contact__wrapper {
+    padding: 50px 70px;
+  }
+
+  .contact__text {
+    font-size: 20px;
+    line-height: 25px;
+    width: 150px;
+  }
+
+  .contact__address {
+    font-size: 16px;
+    text-align: right;
+    width: 155px;
+  }
+
+  .address__city {
+    position: relative;
+    top: 20px;
+  }
+
 }

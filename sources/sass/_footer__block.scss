@@ -82,3 +82,34 @@
     opacity: .3;
   }
 }
+
+@media (min-width: 770px) {
+  .footer__block {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 30px 40px 30px;
+  }
+
+  .footer__socials {
+    border: none;
+    margin-top: 0;
+    padding-left: 10px;
+  }
+
+  .item--vk {
+    background: url(../img/vk.png) no-repeat center center;
+  }
+
+  .item--inst {
+    background: url(../img/insta.png) no-repeat center center;
+  }
+
+  .item--fb {
+    background: url(../img/fbt.png) no-repeat center center;
+  }
+
+  .footer__creater {
+    line-height: 16px;
+    padding: 0px 45px 20px 0px;
+  }
+}

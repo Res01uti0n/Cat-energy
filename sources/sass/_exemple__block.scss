@@ -133,7 +133,6 @@
   .exemple__text {
     font-size: 16px;
     line-height: 24px;
-    margin-top: -10px;
     width: 680px;
   }
 
@@ -148,15 +147,10 @@
   .exemple__statistic {
     background: $wh;
     bottom: -6px;
-    color: $textColor;
-    display: block;
     font-size: 14px;
-    font-weight: 400;
     left: 30px;
     line-height: 14px;
     padding: 0 10px 0 10px;
-    position: absolute;
-    text-align: center;
     width: auto;
   }
 
@@ -165,17 +159,12 @@
   }
 
   .exemple__price {
-    color: $bl;
-    font-family: 'Oswald', sans-serif;
     font-size: 20px;
-    line-height: 20px;
     text-align: right;
-    text-transform: uppercase;
     width: 175px;
   }
 
   .exemple__wrapper {
-    display: flex;
     justify-content: flex-start;
     padding: 10px 0 25px 0;
   }
@@ -191,13 +180,11 @@
     background: $catalogBack;
     height: 330px;
     margin-top: 240px;
-    position: relative;
     width: 100%;
   }
 
   .exemple__img {
     top: -190px;
-    position: absolute;
     left: 0;
   }
 
@@ -206,23 +193,15 @@
   }
 
   .range__wrapper {
-    align-items: center;
     background: $catalogBack;
-    display: flex;
-    justify-content: space-around;
-    padding: 40px;
     position: relative;
     z-index: 2;
   }
 
   .exemple__range {
-    -moz-appearance: none;
-         appearance: none;
-    -webkit-appearance: none;
-    background-color: $rangeColor;
-    border: 1px solid $borderColor2;
-    border-radius: 30px;
-    height: 2px;
+    background: $rangeColor;
+    border: none;
+    height: 6px;
     width: 425px;
   }
 
@@ -238,5 +217,15 @@
       top: 23px;
       width: 100%;
     }
+  }
+
+  .slider--fon {
+    background: $catalogBack;
+    position: absolute;
+    height: 460px;
+    left: -30px;
+    top: 0px;
+    width: 770px;
+    z-index: -1;
   }
 }
