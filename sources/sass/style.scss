@@ -45,6 +45,12 @@ body {
   width: 320px;
 }
 
+.title--hidden {
+  color: transparent;
+  font-size: 1px;
+  position: absolute;
+}
+
 @media (min-width: 770px) {
   .container {
     width: 770px;

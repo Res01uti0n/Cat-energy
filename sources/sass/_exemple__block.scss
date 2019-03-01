@@ -39,6 +39,7 @@
   bottom: -15px;
   color: $textColor;
   display: block;
+  font-family: 'Arial', sans-serif;
   font-size: 12px;
   font-weight: 400;
   left: 18px;
@@ -106,21 +107,10 @@
   width: 85px;
 }
 
-.exemple__range::-webkit-slider-thumb {
-  height: 24px;
-  width: 19px;
-}
-
-.exemple__range:hover::-webkit-slider-thumb {
-  background-size: cover;
-  height: 25px;
-  width: 20px;
-}
-
 @media (min-width: 770px) {
   .exemple__block {
     background: none;
-    padding: 0 30px 0 30px;
+    padding: 0 30px;
   }
 
   .exemple__title {
@@ -148,14 +138,14 @@
     background: $wh;
     bottom: -6px;
     font-size: 14px;
-    left: 30px;
+    left: 20px;
     line-height: 14px;
     padding: 0 10px 0 10px;
     width: auto;
   }
 
   .number--2 {
-    left: 20px;
+    left: 8px;
   }
 
   .exemple__price {
@@ -203,6 +193,30 @@
     border: none;
     height: 6px;
     width: 425px;
+    &:focus {
+      outline-color: transparent;
+    }
+  }
+
+  .exemple__range::-webkit-slider-thumb {
+    -moz-appearance: none;
+         appearance: none;
+    -webkit-appearance: none;
+    background: url(../img/core.png) no-repeat center 16px,
+    url(../img/slider-control.png) no-repeat center center;
+    height: 42px;
+    position: relative;
+    width: 42px;
+  }
+
+  .exemple__range:hover::-webkit-slider-thumb {
+    background: url(../img/core.png) no-repeat center 14px,
+    url(../img/slider-control-hover.png) no-repeat center center;
+  }
+
+  .exemple__range:active::-webkit-slider-thumb {
+    background: url(../img/core.png) no-repeat center 14px,
+    url(../img/slider-control-active.png) no-repeat center center;
   }
 
   .range__text {
@@ -231,5 +245,68 @@
 }
 
 @media (min-width: 1300px) {
-  
+  .exemple__block {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+
+  .exemple__title {
+    margin-top: 75px;
+  }
+
+  .exemple__text {
+    padding: 100px 0 25px 0;
+    width: 435px;
+  }
+
+  .exemple__box {
+    align-items: flex-start;
+    flex-direction: column;
+    width: 500px;
+  }
+
+  .exemple__price {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    text-align: left;
+    width: 330px;
+  }
+
+  .exemple__statistic {
+    background: $catalogBack;
+  }
+
+  .exemple__box-3 {
+    margin-top: -15px;
+  }
+
+  .exemple__slider {
+    bottom: 20px;
+  }
+
+  .range__wrapper {
+    width: 570px;
+  }
+
+  .exemple__img {
+    left: -35px;
+  }
+
+  .img--after {
+    left: 319px;
+  }
+
+  .slider--fon {
+    background: none;
+  }
+
+  .exemple--fon {
+    background: $catalogBack;
+    height: 480px;
+    position: absolute;
+    top: 1855px;
+    width: 100%;
+  }
 }

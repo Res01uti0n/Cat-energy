@@ -74,6 +74,10 @@
 }
 
 @media (min-width: 1300px) {
+  .header__block {
+    padding: 0 40px;
+  }
+
   .desk--fon {
     display: block;
     background: url(../img/index-background-desktop.png) no-repeat right top;

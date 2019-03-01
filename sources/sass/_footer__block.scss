@@ -109,7 +109,22 @@
   }
 
   .footer__creater {
-    line-height: 16px;
     padding: 0px 45px 20px 0px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .footer__block {
+    padding: 50px 40px 40px 40px;
+    position: relative;
+  }
+
+  .footer--fon {
+    background: $catalogBack;
+    height: 163px;
+    margin-top: -163px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
   }
 }

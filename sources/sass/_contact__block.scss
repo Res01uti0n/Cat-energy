@@ -19,6 +19,15 @@
   line-height: 20px;
 }
 
+.contact__map {
+  height: 365px;
+  width: 100%;
+}
+
+.contact--fon {
+  display: none;
+}
+
 @media (min-width: 770px) {
   .contact__wrapper {
     padding: 50px 70px;
@@ -41,4 +50,39 @@
     top: 20px;
   }
 
+  .contact__map {
+    height: 400px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .contact__block {
+    padding-top: 29px;
+    position: relative;
+  }
+
+  .contact__wrapper {
+    background: $wh;
+    left: 40px;
+    min-height: 200px;
+    padding: 0px 100px 0 75px;
+    position: absolute;
+    top: 130px;
+    width: 405px;
+    z-index: 20;
+  }
+
+  .contact__address {
+    text-align: left;
+    margin-top: -5px;
+  }
+
+  .contact--fon {
+    top: 2335px;
+    display: block;
+    height: 400px;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+  }
 }
