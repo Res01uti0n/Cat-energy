@@ -100,5 +100,22 @@
   .text--tablet {
     display: block;
   }
+}
 
+@media (min-width: 1300px) {
+  .info__block {
+    border-bottom: none;
+  }
+
+  .info__wrapper {
+    padding-right: 0;
+  }
+
+  .info__text {
+    width: 230px;
+  }
+
+  .text--4 {
+    width: 245px;
+  }
 }

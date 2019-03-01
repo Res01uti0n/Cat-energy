@@ -30,6 +30,10 @@ body {
   .container {
     width: 770px; } }
 
+@media (min-width: 1300px) {
+  .container {
+    width: 1300px; } }
+
 .header__block {
   -ms-flex-align: center;
       align-items: center;
@@ -71,6 +75,9 @@ body {
   .btn__burger:active {
     opacity: .6; }
 
+.desk--fon {
+  display: none; }
+
 @media (min-width: 770px) {
   .header__block {
     min-height: 100px;
@@ -78,11 +85,26 @@ body {
   .header__logo {
     background: url(../img/logo-tablet.png) no-repeat center center;
     height: 65px;
-    width: 175px; }
+    position: relative;
+    width: 175px;
+    z-index: 1; }
   .logo--title {
     display: none; }
   .btn__burger {
     display: none; } }
+
+@media (min-width: 1300px) {
+  .desk--fon {
+    display: block;
+    background: url(../img/index-background-desktop.png) no-repeat right top;
+    background-size: cover;
+    height: 695px;
+    left: 50%;
+    position: absolute;
+    width: 50%; }
+  .header__logo {
+    background: url(../img/logo-desktop.png) no-repeat center center;
+    width: 215px; } }
 
 .promo__block {
   -ms-flex-align: center;
@@ -158,6 +180,14 @@ body {
     height: 50px;
     line-height: 20px;
     width: 245px; } }
+
+@media (min-width: 1300px) {
+  .promo__block {
+    background: url(../img/index-can.png) no-repeat 490px 20px;
+    min-height: 550px;
+    padding: 100px 0 0 120px; }
+  .promo__text {
+    padding-bottom: 10px; } }
 
 .catalogs__block {
   padding: 25px 20px 0 20px; }
@@ -305,6 +335,39 @@ body {
     .catalog__btn:hover, .catalog__btn:focus {
       width: 165px; } }
 
+@media (min-width: 1300px) {
+  .catalogs__block {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+  .catalog__block {
+    width: 520px; }
+    .catalog__block::after {
+      height: 100px;
+      left: 50px;
+      top: 45px;
+      width: 100px; }
+  .catalog__title {
+    padding-left: 165px; }
+  .catalog__text {
+    padding-top: 35px;
+    width: 465px; }
+  .catalog--slim::before {
+    background: url(../img/cat-slim-desk.png) no-repeat center center;
+    height: 100px;
+    left: 50px;
+    top: 40px;
+    width: 100px; }
+  .catalog--pro::before {
+    background: url(../img/cat-pro-desk.png) no-repeat center center;
+    height: 100px;
+    left: 15px;
+    top: 45px;
+    width: 170px; }
+  .catalog__btn {
+    margin-top: -10px; } }
+
 .info__block {
   padding: 0 20px 0 20px; }
 
@@ -379,6 +442,16 @@ body {
     background: url(../img/advantage-4.png) no-repeat 27px 55px, url(../img/4.png) no-repeat 125px 30px; }
   .text--tablet {
     display: block; } }
+
+@media (min-width: 1300px) {
+  .info__block {
+    border-bottom: none; }
+  .info__wrapper {
+    padding-right: 0; }
+  .info__text {
+    width: 230px; }
+  .text--4 {
+    width: 245px; } }
 
 .exemple__block {
   background: #f2f2f2;
@@ -751,7 +824,7 @@ body {
   content: '';
   height: 2px;
   position: absolute;
-  top: 25px;
+  top: 28px;
   width: 100%; }
 
 @media (min-width: 770px) {
@@ -761,38 +834,31 @@ body {
     position: absolute;
     top: 0; }
   .menu__list {
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-direction: row;
         flex-direction: row;
     -ms-flex-pack: justify;
         justify-content: space-between;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    width: 470px; }
+    width: 440px; }
     .menu__list:first-child {
       padding-left: 300px; }
   .menu__list li {
-    -ms-flex-align: center;
-        align-items: center;
     border: none;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
     min-height: 100px; }
   .menu__item {
-    color: #000;
-    font-family: 'Oswald', sans-serif;
     font-weight: 400;
     font-size: 18px;
-    line-height: 25px;
-    position: relative;
-    text-decoration: none;
-    text-transform: uppercase; }
-    .menu__item:hover, .menu__item:focus {
-      opacity: .6;
-      outline-color: transparent; }
-    .menu__item:active {
-      opacity: .3; } }
+    line-height: 25px; } }
+
+@media (min-width: 1300px) {
+  .menu__list {
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+    width: 480px; }
+    .menu__list:first-child {
+      padding-left: 780px; }
+  .menu__item {
+    color: #fff;
+    font-weight: 400;
+    margin-left: 35px; }
+  .menu--active::before {
+    background: #fff; } }
