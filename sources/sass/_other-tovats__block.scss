@@ -41,19 +41,79 @@
   padding-bottom: 5px;
 }
 
-.ots__gift {
-  align-items: flex-end;
+.gift__wrapper {
+  align-items: center;
   background: url(../img/gift.png) no-repeat center 65px,
   url(../img/gift-photo-mobile.jpg) no-repeat;
-  color: $wh;
   display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 40px 0;
+  min-height: 290px;
+}
+
+.ots__gift {
+  align-self: center;
+  color: $wh;
   font-size: 16px;
   line-height: 20px;
-  margin: 40px 0;
-  padding: 185px 58px 40px 58px;
+  margin-bottom: 40px;
   text-align: center;
+  width: 165px;
 }
 
 .contact--catalog {
   background: $catalogBack;
+}
+
+@media (min-width: 770px) {
+  .other-tovats__block {
+    margin-top: 0;
+    padding: 90px 30px 0px 30px;
+  }
+
+  .ots__title {
+    font-size: 36px;
+    left: 30px;
+    line-height: 36px;
+    top: -50px;
+  }
+
+  .other__tovat {
+    align-items: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 40px 25px 40px;
+  }
+
+  .other__tovat .btn{
+    width: 100%;
+  }
+
+  .ot__title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .ot__info {
+    font-size: 16px;
+    line-height: 20px;
+    min-width: 225px;
+  }
+
+  .gift__wrapper {
+    background: url(../img/gift.png) no-repeat 90px center,
+    url(../img/gift-photo-tablet.jpg) no-repeat;
+    justify-content: center;
+    margin: 60px 0;
+    min-height: 200px;
+  }
+
+  .ots__gift {
+    margin-bottom: 0px;
+    margin-left: 300px;
+    text-align: left;
+  }
+
 }
