@@ -1,0 +1,59 @@
+.other-tovats__block {
+  border-top: 3px solid $btnGreen;
+  margin-top: 40px;
+  padding: 40px 20px 0 20px;
+  position: relative;
+}
+
+.other__tovat {
+  border-bottom: 1px solid $borderColor2;
+  border-top: 1px solid $borderColor2;
+  padding-bottom: 20px;
+}
+
+.ots__title {
+  background: $wh;
+  color: $bl;
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  left: 0;
+  line-height: 25px;
+  padding: 0 25px;
+  position: absolute;
+  top: -35px;
+}
+
+.ot__title {
+  color: $bl;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.ot__info {
+  display: flex;
+  font-size: 14px;
+  justify-content: space-between;
+  line-height: 14px;
+  padding-bottom: 5px;
+}
+
+.ots__gift {
+  align-items: flex-end;
+  background: url(../img/gift.png) no-repeat center 65px,
+  url(../img/gift-photo-mobile.jpg) no-repeat;
+  color: $wh;
+  display: flex;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 40px 0;
+  padding: 185px 58px 40px 58px;
+  text-align: center;
+}
+
+.contact--catalog {
+  background: $catalogBack;
+}

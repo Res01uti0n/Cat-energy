@@ -28,6 +28,8 @@ $borderColor2: #cdcdcd;
 $borderColor3: #e6e6e6;
 $rangeColor: #dcdcdc;
 $underlineColor: #b8b8b8;
+$moreBtnHover: #ebebeb;
+$moreBtnAct: rgba(185, 185, 185, .3);
 
 body {
   color: $textColor;
@@ -51,13 +53,13 @@ body {
   position: absolute;
 }
 
-/*@media (min-width: 770px) {
+@media (min-width: 770px) {
   .container {
     width: 770px;
   }
 }
 
-@media (min-width: 1300px) {
+/*@media (min-width: 1300px) {
   .container {
     width: 1300px;
   }
@@ -71,3 +73,5 @@ body {
 @import 'contact__block';
 @import 'footer__block';
 @import 'menu__block';
+@import 'tovats__block';
+@import 'other-tovats__block';
