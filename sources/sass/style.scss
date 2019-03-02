@@ -51,7 +51,7 @@ body {
   position: absolute;
 }
 
-@media (min-width: 770px) {
+/*@media (min-width: 770px) {
   .container {
     width: 770px;
   }
@@ -61,7 +61,7 @@ body {
   .container {
     width: 1300px;
   }
-}
+}*/
 
 @import 'header__block';
 @import 'promo__block';
