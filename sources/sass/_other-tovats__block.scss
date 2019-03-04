@@ -66,6 +66,10 @@
   background: $catalogBack;
 }
 
+.ots--border {
+  display: none;
+}
+
 @media (min-width: 770px) {
   .other-tovats__block {
     margin-top: 0;
@@ -115,5 +119,73 @@
     margin-left: 300px;
     text-align: left;
   }
+}
 
+@media (min-width: 1300px) {
+  .other-tovats__block {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 40px 65px 40px;
+  }
+
+  .ots__title {
+    font-size: 36px;
+    left: 10px;
+    line-height: 36px;
+    top: -55px;
+  }
+
+  .ots__wrapper {
+    width: 895px;
+  }
+
+  .other__tovat {
+    align-items: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 0;
+  }
+
+  .ot__info {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 40px 0 auto;
+    min-width: 285px;
+  }
+
+  .other__tovat .btn{
+    width: 245px;
+  }
+
+  .gift__wrapper {
+    background: url(../img/gift.png) no-repeat center 65px,
+    url(../img/gift-photo-mobile.jpg) no-repeat -30px 0;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0;
+    min-height: 290px;
+    width: 245px;
+  }
+
+  .ots__gift {
+    margin: 0 0 40px 0;
+    text-align: center;
+    width: 165px;
+  }
+
+  .fon--catalog {
+    top: 2060px;
+  }
+
+  .ots--border {
+    background: $btnGreen;
+    display: block;
+    height: 3px;
+    position: absolute;
+    top: 1573px;
+    width: 100%;
+    z-index: -1;
+  }
 }

@@ -76,7 +76,7 @@
   }
 }
 
-/*@media (min-width: 1300px) {
+@media (min-width: 1300px) {
   .menu__list {
     justify-content: flex-end;
     width: 480px;
@@ -96,4 +96,14 @@
       background: $wh;
     }
   }
-}*/
+
+  .menu--catalog .menu__item{
+    color: $bl;
+  }
+
+  .menu--catalog .menu--active {
+    &::before {
+      background: $btnGreen;
+    }
+  }
+}

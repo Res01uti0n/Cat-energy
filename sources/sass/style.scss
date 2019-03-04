@@ -59,11 +59,11 @@ body {
   }
 }
 
-/*@media (min-width: 1300px) {
+@media (min-width: 1300px) {
   .container {
     width: 1300px;
   }
-}*/
+}
 
 @import 'header__block';
 @import 'promo__block';

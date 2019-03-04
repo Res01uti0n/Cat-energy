@@ -146,7 +146,7 @@
   .tovat__img {
     position: absolute;
     left: 90px;
-    bottom: 74%;
+    bottom: 72%;
   }
 
   .img--2 {
@@ -184,5 +184,43 @@
   .btn--more {
     height: 40px;
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1300px) {
+  .tovats__title {
+    padding: 70px 0 175px 40px;
+  }
+
+  .tovat__block {
+    width: 175px;
+  }
+
+  .tovat__info {
+    width: 175px;
+  }
+
+  .btn--tovat {
+    width: 100%;
+  }
+
+  .tovat__wrapper {
+    width: 175px;
+  }
+
+  .tovat__img {
+    left: 50px;
+  }
+
+  .img--2 {
+    left: 30px;
+  }
+
+  .tovats__more {
+    width: 175px;
+  }
+
+  .btn--more {
+    width: 170px;
   }
 }
