@@ -8,7 +8,9 @@
     <title>Cat-energy</title>
   </head>
   <body>
-    <div class="exemple--fon"></div>
+    <div class="border--field field--1"></div>
+    <div class="border--field field--2"></div>
+    <div class="border--field field--3"></div>
     <div class="container">
     <header class="header__block">
       <a href="#" class="header__logo">Logo</a>
@@ -30,55 +32,60 @@
       </section>
       <section>
         <form class="form__block" action="index.html" method="post">
-          <fieldset class="personal__field">
-            <div class="form__item">
-              <label for="name">Имя:*</label>
-              <input type="text" id="name" name="name" value="Барсик">
-            </div>
-            <div class="form__item">
-              <label for="weight">Вес (кг):*</label>
-              <input type="number" id="weight" name="weight" value="7">
-            </div>
-            <div class="form__item">
-              <label for="age">Возраст (лет):</label>
-              <input type="number" id="age" name="age" value="7">
-            </div>
-          </fieldset>
-          <fieldset class="type__field">
-            <div class="form__item">
-              <input type="radio" id="slim" name="type" value="slim" checked>
-              <label for="slim">Похудение</label>
-            </div>
-            <div class="form__item">
-              <input type="radio" id="pro" name="type" value="pro">
-              <label for="pro">Набор массы</label>
-            </div>
-            <div class="form__item">
-              <input type="radio" id="idknw" name="type" value="idknw">
-              <label for="idknw">Не знаю (Нужен ваш совет)</label>
-            </div>
-          </fieldset>
+          <h2 class="title--hidden">Форма</h2>
+          <div class="form--box">
+            <fieldset class="personal__field">
+              <div class="form__item">
+                <label for="name">Имя:*</label>
+                <input type="text" id="name" name="name" value="Барсик">
+              </div>
+              <div class="form__item">
+                <label for="weight">Вес (кг):*</label>
+                <input type="number" id="weight" name="weight" value="7">
+              </div>
+              <div class="form__item">
+                <label for="age">Возраст (лет):</label>
+                <input type="number" id="age" name="age" value="7">
+              </div>
+            </fieldset>
+            <fieldset class="type__field">
+              <div class="form__item">
+                <input type="radio" id="slim" name="type" value="slim" checked>
+                <label for="slim">Похудение</label>
+              </div>
+              <div class="form__item">
+                <input type="radio" id="pro" name="type" value="pro">
+                <label for="pro">Набор массы</label>
+              </div>
+              <div class="form__item">
+                <input type="radio" id="idknw" name="type" value="idknw">
+                <label for="idknw">Не знаю (Нужен ваш совет)</label>
+              </div>
+            </fieldset>
+          </div>
           <fieldset class="owner__field">
-            <div class="border--field"></div>
             <legend class="field__title">Контактные данные (владельца кота)</legend>
-            <div class="form__item">
-              <label for="email">E-mail:*</label>
-              <input class="mail__input" type="email" id="email" name="e-mail" value="kuklachev@gmail.com">
-            </div>
-            <div class="form__item">
-              <label for="phone">Телефон:*</label>
-              <input class="phone__input" type="text" id="phone" name="phone" value="8 (960) 900-60-90">
+            <div class="border--field"></div>
+            <div class="owner-info__wrapper">
+              <div class="form__item">
+                <label for="email">E-mail:*</label>
+                <input class="mail__input" type="email" id="email" name="e-mail" value="kuklachev@gmail.com">
+              </div>
+              <div class="form__item">
+                <label for="phone">Телефон:*</label>
+                <input class="phone__input" type="text" id="phone" name="phone" value="8 (960) 900-60-90">
+              </div>
             </div>
           </fieldset>
           <fieldset class="comment__field">
-            <div class="border--field"></div>
             <legend class="field__title">Коментарий</legend>
+            <div class="border--field"></div>
             <label class="title--hidden" for="text">Текст</label>
             <textarea class="text__box" name="name" id="text" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <fieldset class="add__field">
-            <div class="border--field"></div>
             <legend class="field__title">Дополнительно</legend>
+            <div class="border--field"></div>
             <div class="checks__wrapper">
               <div class="form__item">
                 <input type="checkbox" id="sweetener" name="sweetener" value="sweetener" checked>
@@ -123,5 +130,7 @@
       <a class="footer__creater" href="#">HTML Academy</a>
     </footer>
     </div>
+    <div class="footer--fon"></div>
+    <div class="contact--fon map--form"><iframe class="contact__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.762454832353!2d30.319337216005955!3d59.93608378187524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631057d105877%3A0x91c16b0cf63dfa74!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsA!5e0!3m2!1sru!2sru!4v1551460499196" style="border:0" allowfullscreen></iframe></div>
   </body>
 </html>

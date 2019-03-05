@@ -37,3 +37,13 @@
     width: 325px;
   }
 }
+
+@media (min-width: 1300px) {
+  .form-title__block {
+    padding: 0 40px 65px 40px;
+  }
+
+  .form__text {
+    margin-left: 0;
+  }
+}
