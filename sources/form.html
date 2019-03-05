@@ -15,6 +15,14 @@
       <a href="#" class="header__logo logo--title">Cat-energy</a>
       <button class="btn__burger" type="button" name="button">Меню</button>
     </header>
+    <section class="menu__block">
+      <ul class="menu__list menu--catalog">
+        <li><a class="menu__item" href="#">Главная</a></li>
+        <li><a class="menu__item" href="#">Каталог продукции</a></li>
+        <li><a class="menu__item menu--active" href="#">Подбор программы</a></li>
+      </ul>
+      <h3 class="title--hidden">Меню</h3>
+    </section>
     <main>
       <section class="form-title__block">
         <h1 class="form__title">Подбор программы</h1>
@@ -51,6 +59,7 @@
             </div>
           </fieldset>
           <fieldset class="owner__field">
+            <div class="border--field"></div>
             <legend class="field__title">Контактные данные (владельца кота)</legend>
             <div class="form__item">
               <label for="email">E-mail:*</label>
@@ -62,27 +71,31 @@
             </div>
           </fieldset>
           <fieldset class="comment__field">
+            <div class="border--field"></div>
             <legend class="field__title">Коментарий</legend>
             <label class="title--hidden" for="text">Текст</label>
             <textarea class="text__box" name="name" id="text" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <fieldset class="add__field">
+            <div class="border--field"></div>
             <legend class="field__title">Дополнительно</legend>
-            <div class="form__item">
-              <input type="checkbox" id="sweetener" name="sweetener" value="sweetener" checked>
-              <label for="sweetener">Сахарозаменитель</label>
-            </div>
-            <div class="form__item">
-              <input type="checkbox" id="water" name="water" value="water">
-              <label for="water">Питьевая вода</label>
-            </div>
-            <div class="form__item">
-              <input type="checkbox" id="milk" name="milk" value="milk">
-              <label for="milk">Молоко</label>
-            </div>
-            <div class="form__item">
-              <input type="checkbox" id="vitamins" name="vitamins" value="vitamins">
-              <label for="vitamins">Витамины</label>
+            <div class="checks__wrapper">
+              <div class="form__item">
+                <input type="checkbox" id="sweetener" name="sweetener" value="sweetener" checked>
+                <label for="sweetener">Сахарозаменитель</label>
+              </div>
+              <div class="form__item">
+                <input type="checkbox" id="water" name="water" value="water">
+                <label for="water">Питьевая вода</label>
+              </div>
+              <div class="form__item">
+                <input type="checkbox" id="milk" name="milk" value="milk">
+                <label for="milk">Молоко</label>
+              </div>
+              <div class="form__item">
+                <input type="checkbox" id="vitamins" name="vitamins" value="vitamins">
+                <label for="vitamins">Витамины</label>
+              </div>
             </div>
           </fieldset>
           <div class="form__options">
