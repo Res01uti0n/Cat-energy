@@ -26,10 +26,15 @@ $bl: #000;
 $borderColor: #d9d9d9;
 $borderColor2: #cdcdcd;
 $borderColor3: #e6e6e6;
+$borderColor4: #cecece;
+$borderColor5: #cfcfcf;
 $rangeColor: #dcdcdc;
 $underlineColor: #b8b8b8;
 $moreBtnHover: #ebebeb;
 $moreBtnAct: rgba(185, 185, 185, .3);
+$checkAct: #bababa;
+$checkAct2: #bcbcbc;
+$inputInval: #ff8282;
 
 body {
   color: $textColor;
@@ -53,7 +58,7 @@ body {
   position: absolute;
 }
 
-@media (min-width: 770px) {
+/*@media (min-width: 770px) {
   .container {
     width: 770px;
   }
@@ -63,7 +68,7 @@ body {
   .container {
     width: 1300px;
   }
-}
+}*/
 
 @import 'header__block';
 @import 'promo__block';
@@ -75,3 +80,5 @@ body {
 @import 'menu__block';
 @import 'tovats__block';
 @import 'other-tovats__block';
+@import 'form-title__block';
+@import 'form__block';

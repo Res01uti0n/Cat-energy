@@ -1,0 +1,250 @@
+.form__block fieldset {
+  border: none;
+  padding: 0 20px;
+}
+
+.form__block label {
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.form__block .personal__field {
+  border-bottom: 1px solid $borderColor3;
+  padding: 0 20px 10px 20px;
+}
+
+.form__block input {
+  border: 1px solid $borderColor3;
+  flex-grow: 1;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 15px;
+  padding-left: 15px;
+  text-transform: uppercase;
+  height: 43px;
+  width: 145px;
+  &:hover,
+  &:focus {
+    border-color: $borderColor2;
+    outline-color: transparent;
+  }
+  &:active {
+    border: 2px solid $textColor;
+  }
+}
+
+.form__item {
+  align-items: center;
+  display: flex;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.form__block .type__field {
+  border-bottom: 1px solid $borderColor3;
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+}
+
+.type__field .form__item {
+  &:active {
+    opacity: .3;
+  }
+}
+
+.type__field input[type='radio'] {
+  margin: 10px 0 0 7px;
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.type__field input[type='radio'] + label {
+  cursor: pointer;
+  padding: 0 0 15px 45px;
+  position: relative;
+}
+
+.type__field input[type='radio'] + label::before {
+  background-color: inherit;
+  border: 1px solid $borderColor4;
+  border-radius: 50%;
+  content: "";
+  height: 28px;
+  left: 0;
+  position: absolute;
+  top: -6px;
+  width: 28px;
+}
+
+.type__field input[type='radio']:hover + label::before,
+.type__field input[type='radio']:focus + label::before {
+  border-color:  $checkAct2;
+  outline-color: transparent;
+}
+
+.type__field input[type='radio'] + label::after {
+  background-color: $btnGreen;
+  border-radius: 50%;
+  content: "";
+  height: 12px;
+  left: 9.5px;
+  opacity: 0;
+  position: absolute;
+  top: 4px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  width: 12px;
+}
+
+.type__field input[type='radio']:checked + label::after {
+  opacity: 1;
+}
+
+.form__block .owner__field {
+  border-top: 3px solid $btnGreen;
+  margin-top: 40px;
+  position: relative;
+  padding-top: 65px;
+}
+
+.field__title {
+  background: $wh;
+  color: $bl;
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  left: 0;
+  line-height: 24px;
+  padding: 0 20px;
+  position: absolute;
+  top: -15px;
+  width: 245px;
+}
+
+.mail__input {
+  background: url(../img/mail.png) no-repeat 93% center;
+}
+
+.phone__input {
+  background: url(../img/phone.png) no-repeat 93% center;
+}
+
+.form__block .comment__field{
+  border-top: 3px solid $btnGreen;
+  margin-top: 40px;
+  position: relative;
+  padding-top: 40px;
+}
+
+.comment__field .field__title {
+  width: auto;
+}
+
+.text__box {
+  border-color: $borderColor3;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 135px;
+  padding: 15px 0 0 15px;
+  text-transform: uppercase;
+  width: 265px;
+  &:hover,
+  &:focus {
+    border-color: $borderColor2;
+    outline-color: transparent;
+  }
+  &:active {
+    border: 2px solid $textColor;
+  }
+}
+
+.input--invalid {
+  border: 2px solid $inputInval;
+}
+
+.form__block .add__field{
+  border-top: 3px solid $btnGreen;
+  margin-top: 40px;
+  position: relative;
+  padding-top: 40px;
+}
+
+.add__field .field__title {
+  width: auto;
+}
+
+.add__field input[type='checkbox'] {
+  margin: 0px 0px 0 7px;
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.add__field input[type='checkbox'] + label {
+  cursor: pointer;
+  padding: 0 0 15px 45px;
+  position: relative;
+}
+
+.add__field input[type='checkbox'] + label::before {
+  background-color: inherit;
+  border: 1px solid $borderColor5;
+  content: "";
+  height: 28px;
+  left: 0px;
+  position: absolute;
+  top: -6px;
+  width: 28px;
+}
+
+.add__field input[type='checkbox']:hover + label::before,
+.add__field input[type='checkbox']:focus + label::before {
+  border: 1px solid $checkAct;
+  outline-color: transparent;
+}
+
+.add__field input[type='checkbox'] + label::after {
+  content: "";
+  height: 15px;
+  left: 7px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  width: 20px;
+}
+
+.add__field input[type='checkbox']:checked + label::after {
+  background: url(../img/tick.png) no-repeat center;
+  opacity: 1;
+}
+
+.add__field .form__item {
+  &:active {
+    opacity: .3;
+  }
+}
+
+.form__options {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.btn--form {
+  border: none;
+  font-size: 16px;
+}
+
+.add__info {
+  margin-top: 20px;
+}
