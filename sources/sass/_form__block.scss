@@ -435,6 +435,7 @@
   }
 
   .form__block .owner__field {
+    border-color: transparent;
     padding: 85px 0px 0 0px;
     width: 100%;
   }
@@ -450,6 +451,7 @@
   }
 
   .form__block .comment__field {
+    border-color: transparent;
     padding: 85px 0 0 0;
     width: 100%;
   }
@@ -459,6 +461,8 @@
   }
 
   .form__block .add__field {
+    border-color: transparent;
+    display: block;
     padding-left: 5px;
     width: 100%;
   }
@@ -499,5 +503,9 @@
 
   .map--form {
     top: 1680px;
+  }
+
+  .border--tablet {
+    display: none;
   }
 }
